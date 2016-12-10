@@ -18,4 +18,5 @@
 
     <!--Button-->
     <string name="compute">Calculate savings</string>
+    <string name="clear">Clear fields</string>
 </resources>

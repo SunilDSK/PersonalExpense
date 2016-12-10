@@ -1,3 +1,21 @@
 <resources>
-    <string name="app_name">PersonalExpense</string>
+    <string name="app_name">Personal Expense</string>
+
+    <!--Months-->
+    <string name="Jan">January</string>
+    <string name="Fab">February</string>
+    <string name="Mar">March</string>
+    <string name="Apr">April</string>
+    <string name="May">May</string>
+    <string name="Jun">June</string>
+
+    <!--Text hint-->
+    <string name="income">Income</string>
+    <string name="expense">Expense</string>
+
+    <!--Message-->
+    <string name="message">Please enter the monthly income and expences in respective text boxes.</string>
+
+    <!--Button-->
+    <string name="compute">Calculate savings</string>
 </resources>

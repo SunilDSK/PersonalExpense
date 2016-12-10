@@ -11,7 +11,228 @@
     tools:context="com.sunilkumar.expences.personalexpense.MainActivity">
 
     <TextView
+        android:id="@+id/message"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:gravity="center"
+        android:text="@string/message" />
+
+    <TextView
+        android:id="@+id/month_jan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/message"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:padding="5dp"
+        android:text="@string/Jan"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/income_jan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_toLeftOf="@+id/expense_jan"
+        android:hint="@string/income"
+        android:inputType="numberDecimal"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:layout_below="@+id/message"/>
+
+    <EditText
+        android:id="@+id/expense_jan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_alignParentEnd="true"
+        android:inputType="numberDecimal"
+        android:hint="@string/expense"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:layout_below="@+id/message"/>
+
+    <TextView
+        android:id="@+id/month_feb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_below="@+id/month_jan"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:text="@string/Fab"
+        android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/income_feb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_toLeftOf="@+id/expense_feb"
+        android:hint="@string/income"
+        android:textSize="20sp"
+        android:inputType="numberDecimal"
+        android:padding="5dp"
+        android:layout_below="@+id/income_jan"/>
+
+    <EditText
+        android:id="@+id/expense_feb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_alignParentEnd="true"
+        android:textSize="20sp"
+        android:hint="@string/expense"
+        android:padding="5dp"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/expense_jan"/>
+
+    <TextView
+        android:id="@+id/month_mar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/month_feb"
+        android:padding="5dp"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:text="@string/Mar"
+        android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/income_mar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_toLeftOf="@+id/expense_jan"
+        android:hint="@string/income"
+        android:textSize="20sp"
+        android:inputType="numberDecimal"
+        android:padding="5dp"
+        android:layout_below="@+id/income_feb"/>
+
+    <EditText
+        android:id="@+id/expense_mar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_alignParentEnd="true"
+        android:inputType="numberDecimal"
+        android:hint="@string/expense"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:layout_below="@+id/expense_feb"/>
+
+    <TextView
+        android:id="@+id/month_apr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/month_mar"
+        android:text="@string/Apr"
+        android:padding="5dp"
+        android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/income_apr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_toLeftOf="@+id/expense_jan"
+        android:inputType="numberDecimal"
+        android:hint="@string/income"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:layout_below="@+id/income_mar"/>
+
+    <EditText
+        android:id="@+id/expense_apr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_alignParentEnd="true"
+        android:inputType="numberDecimal"
+        android:hint="@string/expense"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:layout_below="@+id/expense_mar"/>
+
+    <TextView
+        android:id="@+id/month_may"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/month_apr"
+        android:padding="5dp"
+        android:text="@string/May"
+        android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/income_may"
+        android:layout_width="wrap_content"
+        android:inputType="numberDecimal"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_toLeftOf="@+id/expense_jan"
+        android:hint="@string/income"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:layout_below="@+id/income_apr"/>
+
+    <EditText
+        android:id="@+id/expense_may"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_alignParentEnd="true"
+        android:inputType="numberDecimal"
+        android:hint="@string/expense"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:layout_below="@+id/expense_apr"/>
+
+    <TextView
+        android:id="@+id/month_jun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/month_may"
+        android:text="@string/Jun"
+        android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/income_jun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_toLeftOf="@+id/expense_jan"
+        android:textSize="20sp"
+        android:hint="@string/income"
+        android:inputType="numberDecimal"
+        android:padding="5dp"
+        android:layout_below="@+id/income_may"/>
+
+    <EditText
+        android:id="@+id/expense_jun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_alignParentEnd="true"
+        android:hint="@string/expense"
+        android:inputType="numberDecimal"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:layout_below="@+id/expense_may"/>
+
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/compute"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/compute"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/compute"
+        />
 </RelativeLayout>
